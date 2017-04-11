@@ -1,3 +1,9 @@
+# Uploads
+uploads
+
+# Environment
+.env
+
 # Logs
 logs
 *.log
