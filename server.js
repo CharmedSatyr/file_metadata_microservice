@@ -17,9 +17,9 @@ app.post('/', upload.single('user-file'), function(req, res, next) {
       filename: req.file.filename,
       path: req.file.path,
       size: req.file.size,
-      'witty comment': req.body['user-file']
+      wittycomment: req.body['user-file']
     }
-    // req.file is the `avatar` file
+    // req.file is the 'user-file' file
     // req.body will hold the text fields, if there were any
     res.json(obj);
 });
