@@ -25,26 +25,21 @@
                 <fieldset>
                     <legend>
                         <h4>Upload a file to view its metadata.</h4>
-                        <h4>If you include a witty message, you'll also get to view your own witty message.</h4>
-                        <h4>These files will be saved to your own computer.</h4>
+                        <h4>If you include a witty comment, you'll also get to view your own witty comment.</h4>
                     </legend>
                     <input id='uploadFile' type='text' placeholder='Choose File' disabled='disabled' />
                     <label class='fileUpload btn btn-primary'>Upload
                       <input id='uploadBtn' type='file' name='user-file' class='upload' required/>
                     </label>
                     <br/>
-                    <input type='text' name='user-file' placeholder='Type witty message here'>
-                    <button id='submitBtn' type='submit' class='fileUpload btn btn-primary' />Submit</button>
-
+                    <input type='text' name='user-file' placeholder='Type witty comment here'>
+                    <button type='submit' class='fileUpload btn btn-primary' />Submit</button>
                 </fieldset>
             </form>
         </main>
         <script>
             document.getElementById('uploadBtn').onchange = function() {
                 document.getElementById('uploadFile').value = this.value;
-            };
-            document.getElementById('submitBtn').onClick = function() {
-                console.log('Alive');
             };
         </script>
     </body>
